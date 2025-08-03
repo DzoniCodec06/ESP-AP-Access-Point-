@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>LED Ekran kontrola</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>LED Ekran kontrola</h1>
+    </header>
+    <div class="container">
+        <form action="/submit" method="GET" id="forma">
+            <label for="poruka">Poruka za ispisivanje na ekran</label>
+            <input type="text" name="poruka" id="poruka" placeholder="Srecan Rodjendan">
+            <label for="boja">Boja slova</label>
+            <input type="color" name="boja" id="boja" value="#00ff00">
+            <label for="ponavljanje">Ponavljanje</label>
+            <input type="checkbox" name="ponavljanje" id="ponavljanje">
+            <input type="submit" id="sbmBtn">
+        </form>
+    </div>
+    <footer>
+        <h1>Avantura Animatori</h1>
+    </footer>
+</body>
+<script src="app.js"></script>
+</html>

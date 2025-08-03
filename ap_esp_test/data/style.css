@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100dvh;
+    width: 100dvw;
+    background-image: url("./bckg2.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;     /* optional for parallax effect */
+    /*background: linear-gradient(90deg,rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);*/
+}
+
+header {
+    width: 100%;
+    box-shadow: 0px 0px 40px 10px #00000046;
+}
+
+header h1 {
+    font-size: 90px;
+    color: #fff;
+}
+
+footer {
+    width: 100%;
+    box-shadow: 0px 0px 40px 10px #00000046;
+}
+
+footer h1 {
+    font-size: 80px;
+    color: #fff;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    color: #fff;
+}
+
+.container form input[type="text"] {
+    font-family: "Poppins", sans-serif;
+    font-size: 40px;
+    background-color: #fff;
+    border: 1px solid gray;
+    border-radius: 10px;
+    outline: transparent;
+    padding: 10px 10px;
+    width: 100%;
+}
+
+.container form input[type="color"] {
+    width: 200px;
+    height: 150px;
+    border: none;
+    padding: 10px 10px;
+    background-color: #ffffff73;
+}
+
+.container form input[type="submit"] {
+    font-family: "Poppins", sans-serif;
+    background-color: #ffffff73;
+    color: #fff;
+    font-size: 50px;
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+    outline: transparent;
+    padding: 10px 10px;
+    margin: 20px 0px;
+}
+
+#ponavljanje {
+    width: 100px;
+    height: 100px;
+}
