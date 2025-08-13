@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontrola Odela</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <h1>Kontrola Odela</h1>
+    </header>
+    <div class="container" id="cont">
+        <div class="ranges">
+            <div class="range">
+                <img src="./sun-little.png" alt="little-sun" class="little-sun">
+                <input type="range" min="0" max="255" id="brght" class="slider">
+                <img src="./sun-icon.png" alt="big-sun" class="big-sun">
+            </div>
+            <div class="range">
+                <img src="./slow-icon.png" alt="slow-icon" class="slow-icon">
+                <input type="range" id="speed" min="0" max="255" class="slider">
+                <img src="./fast-icon.png" alt="fast-icon" class="fast-icon">
+            </div>
+        </div>
+        <div class="color-pick">
+            <label for="color">Boja</label>
+            <input type="color" name="color" id="clr" value="#00ff00">
+        </div>
+        <div class="animations">
+            <div class="animation-btn" id="array-0">
+                <img src="./array-icon.png" alt="array-img">
+                <p>Array</p>
+            </div>
+            <div class="animation-btn" id="array-1">
+                <img src="./array-icon.png" alt="array-img">
+                <p>Array</p>
+            </div>
+            <div class="animation-btn" id="array-2">
+                <img src="./array-icon.png" alt="array-img">
+                <p>Array</p>
+            </div>
+        </div>
+    </div>
+    <div class="solid-false" id="solidSelection">
+        <div class="range">
+            <img src="./sun-little.png" alt="little-sun" class="little-sun">
+            <input type="range" id="brght" min="0" max="255" class="slider">
+            <img src="./sun-icon.png" alt="big-sun" class="big-sun">
+        </div>
+        <div class="color-pick">
+            <label for="color">Boja</label>
+            <input type="color" name="color" id="clr" value="#00ff00">
+        </div>
+    </div>
+    <footer>
+        <button id="animBtn" class="s"><img src="./animation-icon.png" alt="animation-img"> Animations</button>
+        <button id="solidBtn"><img src="./palette-icon.png" alt="palette-icon"> Solid</button>
+    </footer>
+</body>
+<script src="app.js"></script>
+</html>
