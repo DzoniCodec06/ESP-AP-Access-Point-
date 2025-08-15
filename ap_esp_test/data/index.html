@@ -8,15 +8,25 @@
     <header>
         <h1>LED Ekran kontrola</h1>
     </header>
-    <div class="container">
+    <div class="container" id="cont">
         <form action="/submit" method="GET" id="forma">
             <label for="poruka">Poruka za ispisivanje na ekran</label>
             <input type="text" name="poruka" id="poruka" placeholder="Srecan Rodjendan">
             <label for="boja">Boja slova</label>
             <input type="color" name="boja" id="boja" value="#00ff00">
+            <label for="skroll">Skrolovanje</label>
+            <input type="checkbox" name="skroll" id="skroll">
             <label for="ponavljanje">Ponavljanje</label>
             <input type="checkbox" name="ponavljanje" id="ponavljanje">
             <input type="submit" id="sbmBtn">
+        </form>
+        <form action="/submit" method="GET">
+            <input type="text" name="mode" id="" value="text" style="display: none;">
+            <input type="submit" id="txtBtn" class="ab" value="Text">
+        </form>
+        <form action="/submit" method="GET">
+            <input type="text" name="mode" id="" value="solid" style="display: none;">
+            <input type="submit" id="solidBtn" class="uab" value="Solid">
         </form>
     </div>
     <footer>
